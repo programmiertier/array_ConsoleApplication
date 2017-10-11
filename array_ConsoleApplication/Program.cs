@@ -25,7 +25,7 @@ namespace array_ConsoleApplication
             }
 
 
-            object[] universal = new object[10];
+            object[] universal = new object[5];
             universal[0] = "200 gr. Tüte Gummibären";
             universal[1] = 555;
             universal[2] = 'a';
@@ -33,7 +33,8 @@ namespace array_ConsoleApplication
             // WriteLine("{0}\n{1}", universal);
             for(int artikel = 0; artikel < universal.Length; artikel++)
             {
-                WriteLine("| {0} |", universal[artikel]);
+                WriteLine("| {0} |", universal[artikel]);   // universal[artikel] + 5 funktioniert NICHT, d.h. 555 wird nicht als Zahl erkannt
+                // WriteLine("| {0} |", universal[artikel].GetType());
             }
 
             ReadLine();
